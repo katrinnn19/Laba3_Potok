@@ -1,6 +1,6 @@
-package com.company; // Оголошуємо пакет, в якому знаходиться цей клас
+package com.company; 
 
-public class Consumer implements Runnable { // Оголошуємо клас Consumer, який реалізує інтерфейс Runnable для багатопоточності
+public class Consumer implements Runnable { 
     private final int itemNumbers; // Кількість елементів, які буде забирати споживач
     private final Manager manager; // Об'єкт Manager для керування доступом до сховища
     private final int id; // Ідентифікатор споживача
