@@ -1,6 +1,6 @@
-package com.company; // Оголошуємо пакет, в якому знаходиться цей клас
+package com.company; 
 
-public class Producer implements Runnable { // Оголошуємо клас Producer, який реалізує інтерфейс Runnable для багатопоточності
+public class Producer implements Runnable { 
     private final int itemNumbers; // Кількість елементів, які буде додавати продюсер
     private final Manager manager; // Об'єкт Manager для керування доступом до сховища
     private final int id; // Ідентифікатор продюсера
