@@ -1,16 +1,16 @@
-package com.company; // Оголошуємо пакет, в якому знаходиться цей клас
+package com.company; 
 
-public class Main { // Оголошуємо публічний клас Main
+public class Main { 
 
-    public static void main(String[] args) { // Головний метод, з якого починається виконання програми
+    public static void main(String[] args) { 
         Main main = new Main(); // Створюємо новий об'єкт Main
-        int storageSize = 10; // Ініціалізуємо змінну storageSize, яка визначає розмір сховища
-        int itemNumbers = 30; // Ініціалізуємо змінну itemNumbers, яка визначає кількість елементів
-        main.starter(storageSize, itemNumbers); // Викликаємо метод starter з аргументами storageSize та itemNumbers
+        int storageSize = 10; //  розмір сховища
+        int itemNumbers = 30; // кількість елементів
+        main.starter(storageSize, itemNumbers); 
     }
 
-    private void starter(int storageSize, int itemNumbers) { // Метод starter, який починає основну логіку роботи з елементами
-        Manager manager = new Manager(storageSize); // Створюємо новий об'єкт Manager з вказаним розміром сховища
+    private void starter(int storageSize, int itemNumbers) { 
+        Manager manager = new Manager(storageSize); 
         int item = 0; // Ініціалізуємо лічильник item для підрахунку доданих елементів
         int i = 0; // Ініціалізуємо лічильник ітерацій i
         while (item < itemNumbers) { // Цикл, що працює, доки кількість оброблених елементів менша за itemNumbers
